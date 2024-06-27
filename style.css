@@ -1,0 +1,166 @@
+   /* Importar tipografía desde Google Fonts */
+   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+   /* Estilos generales */
+   body {
+       font-family: 'Lato', sans-serif;
+       color: #333;
+       margin: 0;
+       padding: 0;
+   }
+
+   /* Gradientes */
+   .gradient-bg-3 {
+       background: linear-gradient(45deg, #a044ff, #ff7e5f);
+   }
+
+   /* Header styles */
+   header {
+       padding: 1rem;
+       background: linear-gradient(45deg, #ff7e5f, #6a3093);
+   }
+
+   header img {
+       height: 50px;
+   }
+
+   header .nav-link {
+       color: white;
+       margin: 0 10px;
+       transition: color 0.3s, text-shadow 0.3s;
+       /* Transición suave de color y sombra de texto */
+   }
+
+   header .nav-link:hover {
+       color: #feb47b;
+       /* Color al hacer hover */
+       text-shadow: 0 0 8px #feb47b;
+       /* Sombra de texto al hacer hover */
+   }
+
+   header .social-icons a {
+       color: white;
+       margin: 0 5px;
+       font-size: 1.2rem;
+   }
+
+   header .social-icons a:hover {
+       color: #ff7e5f;
+   }
+
+   /* Card styles */
+   .card {
+       background-color: #1e1e1e;
+       color: white;
+       padding: 1rem;
+       border-radius: 10px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       margin: 1rem;
+       position: relative;
+       transition: transform 0.3s, box-shadow 0.3s;
+   }
+
+   .card:hover {
+       transform: translateY(-10px);
+       /* Levanta la tarjeta 10px al hacer hover */
+       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+       /* Aumenta la sombra */
+   }
+
+   .card::before {
+       content: '';
+       position: absolute;
+       top: -2px;
+       left: -2px;
+       right: -2px;
+       bottom: -2px;
+       z-index: -1;
+       background: linear-gradient(45deg, #ff7e5f, #a044ff);
+       border-radius: 10px;
+       filter: blur(10px);
+   }
+
+   .logo {
+       /* Tamaño del logo */
+       border-radius: 50%;
+       /* Forma redonda */
+   }
+
+   .fa-tiktok {}
+
+   .social-link {
+       color: #333;
+       /* Color por defecto */
+       transition: color 0.3s;
+       /* Transición suave de color */
+   }
+
+   .social-link:hover {
+       color: inherit;
+       /* Hereda el color del elemento padre */
+   }
+
+   /* Cambiar color específico para cada red social al hacer hover */
+   .social-link.facebook:hover {
+       color: #3b5998;
+       /* Color original de Facebook */
+       filter: drop-shadow(2px 0px 0px #3b5998);
+       /* Sombra de gota para Facebook */
+   }
+
+   .social-link.twitter:hover {
+       color: #1da1f2;
+       /* Color original de Twitter */
+       filter: drop-shadow(2px 0px 0px #1da1f2);
+       /* Sombra de gota para Twitter */
+   }
+
+   .social-link.instagram:hover {
+       color: #e4405f;
+       /* Color original de Instagram */
+       filter: drop-shadow(2px 0px 0px #e4405f);
+       /* Sombra de gota para Instagram */
+   }
+
+   .social-link.discord:hover {
+       color: #7289da;
+       /* Color original de Discord */
+       filter: drop-shadow(2px 0px 0px #7289da);
+       /* Sombra de gota para Discord */
+   }
+
+   .social-link.tiktok:hover {
+       color: #111111;
+       /* Color original de TikTok */
+       filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+       /* Sombra de gota para TikTok */
+   }
+
+   .social-link.twitch:hover {
+       color: #6441a5;
+       /* Color original de Twitch */
+       filter: drop-shadow(2px 0px 0px #6441a5);
+       /* Sombra de gota para Twitch */
+   }
+
+   .fa.fa-twitter {
+       font-family: sans-serif;
+   }
+
+   .fa.fa-twitter::before {
+       content: "𝕏";
+       font-size: 1.2em;
+   }
+
+   /* Estilos para dispositivos móviles */
+   @media (max-width: 768px) {
+       .logo {
+           height: 40px;
+           /* Ajusta el tamaño del logo para dispositivos móviles */
+       }
+
+       .card {
+           margin: 0.5rem;
+           /* Reduce el margen de las tarjetas para dispositivos móviles */
+       }
+   }
